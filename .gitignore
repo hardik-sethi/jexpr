@@ -1,0 +1,11 @@
+target/
+*.jar
+*.war
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.DS_Store
+Thumbs.db
+*.log
