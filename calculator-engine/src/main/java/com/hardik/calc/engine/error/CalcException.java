@@ -2,7 +2,7 @@ package com.hardik.calc.engine.error;
 
 
 public abstract sealed class CalcException extends RuntimeException
-        permits LexerException {
+        permits LexerException, ParserException {
 
     private final int column;
 
@@ -10,8 +10,6 @@ public abstract sealed class CalcException extends RuntimeException
         super(message);
         this.column = column;
     }
-
-    /** Zero-based column in the source string where the error was detected. */
     public int column() {
         return column;
     }
